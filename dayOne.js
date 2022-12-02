@@ -417,10 +417,10 @@ const text = [
 const findBiggestRow = (bunchOfNumber) => {
   let biggestNumber = 0;
 
-  for (let row = 0; row < text.length; row++) {
+  for (let row = 0; row < bunchOfNumber.length; row++) {
     let currentCount = 0;
-    for (let column = 0; column < text[row].length; column++) {
-      currentCount += text[row][column];
+    for (let column = 0; column < bunchOfNumber[row].length; column++) {
+      currentCount += bunchOfNumber[row][column];
     }
     if (currentCount > biggestNumber) {
       biggestNumber = currentCount;
